@@ -1062,11 +1062,11 @@ function inserSelector(step){
 
         // Créer le style en pourcentages
         const responsiveStyle = `style="top: ${topPercent}%; left: ${leftPercent}%;"`;
-
+        const size = Math.min(parseInt(thisButton[3]) || 32, 64);  // Limite à 64px max
         // Ajouter le hotspot avec les pourcentages
         $('#imgHotsop').append(
           '<div ' + responsiveStyle + ' data-value="' + thisButton[1] + '" class="lg-hotspot hotspotButton">' +
-            '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="' + thisButton[2] + '" class="bi bi-bullseye" viewBox="0 0 16 16">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="'+size+'" height="'+size+'" fill="' + thisButton[2] + '" class="bi bi-bullseye" viewBox="0 0 16 16">' +
               '<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>' +
               '<path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>' +
               '<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>' +
