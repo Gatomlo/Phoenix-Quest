@@ -213,6 +213,7 @@ $(document).ready(function(){
       $.each(steps,function(key,oneStep){
         //ajout des lieux et objects par défaut
         if(oneStep.default==true){
+          console.log(oneStep.id)
           addItemOrLocation(oneStep)
         }
       })
