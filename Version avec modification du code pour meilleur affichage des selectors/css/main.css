@@ -1,0 +1,632 @@
+.gameInterface{
+  height: 80vh;
+  width: auto;
+}
+
+.gameInterface.with-hotspots {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Couleur claire du cercle */
+  border-top: 8px solid #3498db; /* Couleur du segment animé */
+  border-radius: 50%; /* Cercle complet */
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite; /* Animation continue */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+input[type=range]::-moz-range-thumb {
+  background-color: #ff934f ;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+#myBar {
+  width: 0%;
+  background-color: #ff934f;
+}
+body{
+  background-color: #dabd91;
+}
+.toClick{
+  background-color: red;
+  fill:red;
+}
+.toClick{
+  background-color: red!important;
+  display: block;
+  opacity: 1 !important;
+}
+#titleText{
+  font-size: 2em;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+}
+#mobileFooter{
+  display: none;
+}
+#titleBar{
+  width: 100%;
+}
+
+#titleMenu{
+  text-align: right;
+}
+
+.stepImg{
+  display: block;
+  width: 60%;
+  margin: auto
+}
+
+#qrCodeReader__scan_region{
+  width: 90%!important;
+  margin: auto;
+}
+#gameMap{
+width:100%
+}
+.patternlock{
+  width: 50%;
+  margin:auto;
+}
+#passZone{
+  font-size: 2em;
+  text-align: center;
+  color:#007bff;
+  margin-left: auto;
+}
+
+#message{
+  margin: auto;
+  margin-top: 20px;
+  width:50%
+}
+.passCard{
+margin: auto;
+margin-top: 50px;
+max-width: 800px;
+border-color: #007bff;
+}
+.passCardBody{
+  border-color: #007bff;
+  margin-bottom: 50px;
+
+
+}
+
+#digit .col{
+  padding:0;
+  text-align: center;
+  max-width: 80px;
+
+}
+
+#actualCode{
+  margin: auto;
+}
+
+.oneObject{
+  z-index: 1000;
+}
+
+.oneDigitFromTrying{
+  font-size: 2.5em;
+}
+#contentImg{
+  margin: auto;
+}
+#password{
+  width: 100%;
+}
+#loginSendSoluce{
+  width: 20%;
+}
+
+#loginPasswordInput{
+  margin-top: 20px;
+}
+
+.input-group-append {
+  cursor: pointer;
+}
+.slidersRow{
+  margin: auto;
+  margin-top: 30px;
+}
+.slidersValue{
+    color:#007bff;
+    font-size: 1.5em;
+}
+.gameInterfaceButton{
+  max-width: 75px;
+}
+@font-face {
+  font-family: gijgo-material;
+  src: url(./fonts/gijgo.material.woff);
+}
+#timer{
+  width: 120px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.alignRight{
+  text-align: right;
+}
+
+.lg-hotspot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.pin{
+  margin-top: -10px;
+}
+.btn-primary{
+  background-color: #ff934f;
+  border:#ff934f;
+}
+.btn-primary:hover{
+  background-color: #ee5622;
+  border:#ee5622;
+}
+.btn-primary:active{
+  background-color: #ee5622!important;
+  border:#ee5622;
+}
+.text-bg-primary{
+  background-color: #ff934f!important;
+  border:#ff934f!important;
+}
+.text-bg-primary:hover{
+  background-color: #ee5622!important;
+  border:#ee5622!important;
+}
+.card{
+  min-height: 85vh;
+}
+.card-header{
+  background-color: #f3ebde;
+  border-bottom: 2px solid #dabd91;
+
+}
+.card-footer{
+  background-color: #f3ebde;
+  border-top: 2px solid #dabd91;
+
+}
+#itemListTitle, #locationListTitle, #stepName{
+  color:#ee5622;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+#timer{
+  background-color: #ef6461!important;
+  color: #dabd91!important;
+}
+
+.text-bg-warning{
+  background-color: #ef6461!important;
+  color: #dabd91!important;
+}
+#hintCountdown{
+  padding-left: 5px!important;
+}
+.oneDigit{
+  width: 50px;
+
+}
+
+.switch{
+  color:#dabd91;
+}
+
+.oneDigit{
+  width: 50px;
+}
+.digit{
+  width:75px;
+  font-size: 45px;
+  margin-top: 5px;
+  background-color: #f3ebde!important;
+  color:#dabd91;
+}
+.digit:hover{
+  background-color: #dabd91!important;
+}
+
+#reset, #resetDirectionnal, #resetSwitch{
+  background-color: #ff934f!important;
+  color:white!important;
+}
+#reset:hover, #resetDirectionnal:hover, #resetSwitch:hover{
+  background-color: #ee5622!important;
+}
+.btn-success{
+  background-color: #74cb96!important;
+  color:white;
+  border: none;
+}
+.btn-success:hover{
+  background-color: #4b967d!important;
+}
+.lock-dots circle{
+  fill:#dabd91!important;
+}
+line{
+  stroke:#dabd91!important;
+}
+#logo{
+  width:90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slidersName, .slidersValue{
+  color:black!important;
+}
+
+.gj-slider-md [role="handle"], .gj-slider-md [role="progress"]{
+  background-color: #dabd91!important;
+  max-width: 100%
+}
+
+/* ============================================
+   HOTSPOTS RESPONSIVE - SOLUTION DÉFINITIVE
+   ============================================ */
+
+/* IMPORTANT : Le conteneur doit être relatif et s'adapter à l'image */
+.hotspot-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.hotspot-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Boutons hotspot - DOIVENT utiliser des pourcentages */
+.hotspotButton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    /* CRITICAL : transform pour centrer le hotspot sur le point exact */
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    display: block;
+    z-index: 10;
+}
+
+.hotspotButton:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Le SVG bullseye à l'intérieur */
+.hotspotButton svg {
+    display: block;
+    pointer-events: none;
+}
+
+/* Bouton interne (si utilisé) */
+.lg-hotspot__button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* ============================================
+   FIN SECTION HOTSPOTS
+   ============================================ */
+
+.lg-container {
+  max-width: 100%;
+  position: relative;
+  margin: 1rem;
+  padding: 0;
+}
+
+.lg-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.lg-hotspot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  &:hover,
+  &:active {
+    .lg-hotspot__button {
+      border-color: $colorButtonHover;
+      &:after {
+        background-color: $colorButtonHover;
+      }
+    }
+  }
+  &--selected {
+    z-index: 999;
+    .lg-hotspot__label {
+      opacity: 1;
+    }
+  }
+  &__button {
+    height: $buttonRadius * 2;
+    width: $buttonRadius * 2;
+    padding: 0px;
+    border-radius: 100%;
+    border: 1px solid $colorButton;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: button-pulse 7s ease-in-out infinite;
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      content: "";
+      display: block;
+      height: $buttonRadius * 0.7;
+      width: $buttonRadius * 0.7;
+      border-radius: 100%;
+      border: 3px solid white;
+      background-color: $colorButton;
+      transition: border-color 1s linear;
+    }
+  }
+  &__label {
+    position: absolute;
+    padding: 0 0 1.1em 0;
+    width: 16em;
+    max-width: 50vw;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.45em;
+    z-index: -1;
+    border-radius: $labelBorderRadius;
+    user-select: none;
+    opacity: 0;
+    transition: all $labelFade linear;
+    h4 {
+      margin: 0;
+      padding: 0.65em $labelPaddingX;
+      background-color: $colorHeadingBackground;
+      font-size: 1.1em;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      color: white;
+      border-radius: $labelBorderRadius $labelBorderRadius 0 0;
+    }
+    p {
+      margin: 0;
+      padding: 1.1em $labelPaddingX 0 $labelPaddingX;
+      color: $colorText;
+    }
+  }
+}
+
+.lg-hotspot:hover{
+  color:red;
+}
+.lg-hotspot--top-left .lg-hotspot__label {
+  top: $buttonRadius;
+  left: $buttonRadius;
+}
+
+.lg-hotspot--top-right .lg-hotspot__label {
+  top: $buttonRadius;
+  right: $buttonRadius;
+}
+
+.lg-hotspot--bottom-right .lg-hotspot__label {
+  right: $buttonRadius;
+  bottom: $buttonRadius;
+}
+
+.lg-hotspot--bottom-left .lg-hotspot__label {
+  bottom: $buttonRadius;
+  left: $buttonRadius;
+} */
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.15, 1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+.hintNumberBadge{
+  color:red!important;
+}
+.oneObjectToUse{
+  margin-left: 5px;
+}
+
+#qrCodeReaderForSonometer{
+  margin:auto;
+  width: 500px !important;
+}
+
+#qrCodeReader{
+  margin:auto;
+  width: 90% !important;
+}
+
+/* #qrCodeReader{
+  margin:auto;
+  width: 750;
+} */
+
+#listOfSymbols{
+  margin: auto;
+  text-align: center;
+}
+.sonoMeterProgressBar{
+  margin: auto;
+  max-width: 50%;
+}
+#mobileLogo{
+  width:20%;
+  margin: 5px;
+}
+
+@media (max-width:800px){
+  .sliderButtons{
+
+    width: 20px;
+  }
+  .patternlock{
+    width: 100%;
+    margin:auto;
+  }
+  .slidersValue{
+      color:#007bff;
+      font-size: 1em;
+  }
+  .slidersName{
+    flex: none !important;
+  }
+  body, .container, .gameInterface {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+  #titleText{
+    font-size: 1.1em;
+    font-family:  "Gill Sans", sans-serif;
+    font-weight: 300;
+  }
+  .oneObjectLine{
+    margin-bottom: 10px;
+  }
+
+.locationStatus{
+  right: 10px;
+}
+
+#qrCodeReader{
+  margin:auto;
+  width: 90% !important;
+}
+
+#qrCodeReader__scan_region{
+  width: 90%!important;
+  margin: auto;
+}
+
+/* #titleBar{display: none;} */
+.stepImg{
+  width: 90%;
+  margin: auto
+}
+
+#stepName{
+  font-size: 1.2em;
+}
+#logo{
+  display: none;
+}
+#logoCol{
+  display: none;
+}
+#mobileLogo{
+  width:35%;
+  margin: 5px;
+}
+/* #hintCountZoneMenu{
+  display: none;
+} */
+#mobileFooter{
+  display: flex;
+  height: 50px;
+  margin-top: 10px;
+}
+#titleMenu{
+  display: none;
+}
+#rules{
+  display: none;
+}
+
+#titleBar{
+  margin: auto;
+  width:90%;
+}
+
+
+#timer {
+  width: auto;           /* Permet au timer de s'adapter à l'espace disponible */
+  max-width: 100px;      /* Limite la largeur maximale */
+  font-size: 1em;      /* Ajuste la taille de la police pour mobile */
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+#titleContainer{
+  margin-left: 0;
+}
+
+
+/* HOTSPOTS RESPONSIVE MOBILE */
+ .hotspot-container {
+     margin: 10px auto;
+ }
+
+ .hotspotButton {
+     width: 40px;  /* Plus grand pour le tactile */
+     height: 40px;
+ }
+
+ .hotspotButton svg {
+     width: 40px;
+     height: 40px;
+ }
+
+}

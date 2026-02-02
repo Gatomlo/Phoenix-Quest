@@ -1,0 +1,15 @@
+{
+  "name": "Les mystères du phoenix",
+  "short_name": "Phoenix game",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#2c3e50",
+  "icons": [
+    {
+      "src": "medias/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
