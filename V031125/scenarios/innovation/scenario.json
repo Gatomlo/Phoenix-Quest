@@ -72,7 +72,7 @@
       "id":2,
       "type":"location",
       "lockType":"selector",
-      "lockCode":[["style=\"top:440px;left:560px \"" ,24,"#00858c00","32"]],
+      "lockCode":[["style=\"top:440px;left:560px \"" ,9,"#00858c00","32"]],
       "code":"INNOA2",
       "default":false,
       "closed":false,
