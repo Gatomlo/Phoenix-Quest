@@ -855,10 +855,10 @@ $('#qrCodeButton').on('click',function(){
         else{
           $('#contentImg').css('display','block')
           showStep(oneStep)
+          removeConnexeSteps(oneStep)
           var listOfStepToAddSimultaneous = oneStep.toAdd
           $.each(steps,function(key,oneStep){
             if($.inArray(oneStep.id,listOfStepToAddSimultaneous)!=-1 && $.inArray(oneStep.id,history)==-1){
-              removeConnexeSteps(oneStep)
               addConnexeSteps(oneStep)
               addItemOrLocation(oneStep,false)
             }
@@ -895,7 +895,12 @@ $('#qrCodeButton').on('click',function(){
           return false
         }
       }
-      if(oneStep.type=='location'&& oneStep.code==decodeText){
+      console.log("AddLikeNewLocation",oneStep.AddLikeNewLocation)
+      if((oneStep.type=='location'&& oneStep.code==decodeText)||oneStep.AddLikeNewLocation){
+        console.log("dans la condition")
+        if(oneStep.AddLikeNewLocation){
+          addItemOrLocation(oneStep,true)
+        }
         if($.inArray(oneStep.id,actualLocations) != -1){
           if(oneStep.lockType == null){
             locationsOpenedHistory.push(oneStep.id)
@@ -929,6 +934,7 @@ $('#qrCodeButton').on('click',function(){
           $('#contentImg').html('<img class="stepImg" src="medias/noway.png">')
           return false
         }
+
         //si le lieu ou l'objet parent (needBefore) n'a pas encore été scanné ou n'a pas encore été découvert
         if($.inArray(oneStep.needBefore,history) == -1){
           $('.card-footer').css('background-color',footerColor)
